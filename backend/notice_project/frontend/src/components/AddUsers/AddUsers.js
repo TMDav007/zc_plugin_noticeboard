@@ -35,7 +35,6 @@ export const Noticeboard = ({ setShowAddUser, setOpenModal, allUsers }) => {
     
     useEffect(() => {
       const filterUser = allUsers?.filter(name => name.user_name.toLowerCase().includes(search.toLowerCase()))
-      console.log(filterUser, search,"usersss")
       setFilterUsers(filterUser)
     }, [search])
 
