@@ -11,10 +11,10 @@ import UserNotice from "./noticeBoardComponent/UserNoticeBoard";
 import EmailUnsubscription from "./EmailUnsubscriptionPage/EmailUnsubscription";
 import SearchResult from "./noticeBoardComponent/SearchResult";
 
-function NoticeBoard() {
+function NoticeBoard({userInfo}) {
 	return (
 		<div className="notice">
-			<NoticeBoardHeader />
+			<NoticeBoardHeader userInfo={userInfo}/>
 			<Switch>
 				<Route exact path="/noticeboard/search">
 					<SearchResult />
